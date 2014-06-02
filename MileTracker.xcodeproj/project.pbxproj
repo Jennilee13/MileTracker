@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		474EF4C519343833001F5146 /* PropertyDtlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 474EF4C419343833001F5146 /* PropertyDtlViewController.m */; };
 		47E0ABF51932B2EA0070A4BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E0ABF41932B2EA0070A4BA /* Foundation.framework */; };
 		47E0ABF71932B2EA0070A4BA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E0ABF61932B2EA0070A4BA /* CoreGraphics.framework */; };
 		47E0ABF91932B2EA0070A4BA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E0ABF81932B2EA0070A4BA /* UIKit.framework */; };
@@ -21,6 +22,9 @@
 		47E0AC161932B2EA0070A4BA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E0ABF81932B2EA0070A4BA /* UIKit.framework */; };
 		47E0AC1E1932B2EA0070A4BA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 47E0AC1C1932B2EA0070A4BA /* InfoPlist.strings */; };
 		47E0AC201932B2EA0070A4BA /* MileTrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E0AC1F1932B2EA0070A4BA /* MileTrackerTests.m */; };
+		47E0AC2C1932B8E80070A4BA /* Property.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E0AC2B1932B8E80070A4BA /* Property.m */; };
+		47E0AC301932BB230070A4BA /* PropertySvcCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E0AC2F1932BB230070A4BA /* PropertySvcCache.m */; };
+		47F50F38193C17F000718494 /* PropertyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F50F37193C17F000718494 /* PropertyController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		474EF4C319343833001F5146 /* PropertyDtlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PropertyDtlViewController.h; path = ../PropertyDtlViewController.h; sourceTree = "<group>"; };
+		474EF4C419343833001F5146 /* PropertyDtlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PropertyDtlViewController.m; path = ../PropertyDtlViewController.m; sourceTree = "<group>"; };
 		47E0ABF11932B2EA0070A4BA /* MileTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MileTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47E0ABF41932B2EA0070A4BA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		47E0ABF61932B2EA0070A4BA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +59,13 @@
 		47E0AC1B1932B2EA0070A4BA /* MileTrackerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MileTrackerTests-Info.plist"; sourceTree = "<group>"; };
 		47E0AC1D1932B2EA0070A4BA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		47E0AC1F1932B2EA0070A4BA /* MileTrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MileTrackerTests.m; sourceTree = "<group>"; };
+		47E0AC2A1932B8E80070A4BA /* Property.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Property.h; sourceTree = "<group>"; };
+		47E0AC2B1932B8E80070A4BA /* Property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Property.m; sourceTree = "<group>"; };
+		47E0AC2D1932BA020070A4BA /* PropertySvc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PropertySvc.h; sourceTree = "<group>"; };
+		47E0AC2E1932BB230070A4BA /* PropertySvcCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertySvcCache.h; sourceTree = "<group>"; };
+		47E0AC2F1932BB230070A4BA /* PropertySvcCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertySvcCache.m; sourceTree = "<group>"; };
+		47F50F36193C17F000718494 /* PropertyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertyController.h; sourceTree = "<group>"; };
+		47F50F37193C17F000718494 /* PropertyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertyController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,9 +125,13 @@
 		47E0ABFA1932B2EA0070A4BA /* MileTracker */ = {
 			isa = PBXGroup;
 			children = (
+				47E0AC291932B8BB0070A4BA /* Model */,
 				47E0AC031932B2EA0070A4BA /* AppDelegate.h */,
-				47E0AC041932B2EA0070A4BA /* AppDelegate.m */,
+				474EF4C319343833001F5146 /* PropertyDtlViewController.h */,
+				474EF4C419343833001F5146 /* PropertyDtlViewController.m */,
 				47E0AC061932B2EA0070A4BA /* Main.storyboard */,
+				47F50F36193C17F000718494 /* PropertyController.h */,
+				47F50F37193C17F000718494 /* PropertyController.m */,
 				47E0AC091932B2EA0070A4BA /* ViewController.h */,
 				47E0AC0A1932B2EA0070A4BA /* ViewController.m */,
 				47E0AC0C1932B2EA0070A4BA /* Images.xcassets */,
@@ -150,6 +167,19 @@
 				47E0AC1C1932B2EA0070A4BA /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		47E0AC291932B8BB0070A4BA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				47E0AC2A1932B8E80070A4BA /* Property.h */,
+				47E0AC2B1932B8E80070A4BA /* Property.m */,
+				47E0AC2D1932BA020070A4BA /* PropertySvc.h */,
+				47E0AC2E1932BB230070A4BA /* PropertySvcCache.h */,
+				47E0AC2F1932BB230070A4BA /* PropertySvcCache.m */,
+				47E0AC041932B2EA0070A4BA /* AppDelegate.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,9 +279,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47F50F38193C17F000718494 /* PropertyController.m in Sources */,
 				47E0AC0B1932B2EA0070A4BA /* ViewController.m in Sources */,
 				47E0AC051932B2EA0070A4BA /* AppDelegate.m in Sources */,
+				47E0AC2C1932B8E80070A4BA /* Property.m in Sources */,
 				47E0AC011932B2EA0070A4BA /* main.m in Sources */,
+				474EF4C519343833001F5146 /* PropertyDtlViewController.m in Sources */,
+				47E0AC301932BB230070A4BA /* PropertySvcCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +490,7 @@
 				47E0AC251932B2EA0070A4BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		47E0AC261932B2EA0070A4BA /* Build configuration list for PBXNativeTarget "MileTrackerTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +499,7 @@
 				47E0AC281932B2EA0070A4BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

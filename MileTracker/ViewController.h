@@ -8,9 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+//for testing of sending data back from detail
+#import "PropertyDtlViewController.h"
+#import "PropertyController.h"
 
-@property (weak, nonatomic) IBOutlet UITextField *propTitle;
+
+
+@interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, PropertyDtlViewControllerDelegate>
+//@interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+
+//@property (weak, nonatomic) IBOutlet UITextField *propTitle;
 
 - (IBAction)saveProperty:(id)sender;
 - (IBAction)deleteProperty:(id)sender;
